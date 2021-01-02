@@ -19,7 +19,7 @@ This is a repo where I played with Variational AutoEncoders (VAE)
 ### Adding attributes to an image 
 
 Smiling
-![vae](screen/vae_face_Smiling.png)
+![vae](screen/vae_face_smiling.png)
 
 Bangs
 ![vae](screen/vae_face_bangs.png)
