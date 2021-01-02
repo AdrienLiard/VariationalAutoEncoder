@@ -1,4 +1,6 @@
-
+data
+\#gesture
+generative-env
 run/gan/*
 run/compose/*
 run/paint/*
@@ -119,3 +121,4 @@ venv.bak/
 # mypy
 .mypy_cache/
 
+Dl Insta.ipynb

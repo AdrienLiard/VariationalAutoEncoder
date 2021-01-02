@@ -1,48 +1,45 @@
-# Generative Deep Learning
-### Teaching Machines to paint, write, compose and play
+# Generative Deep Learning using Keras
 
-The official code repository for examples in the O'Reilly book 'Generative Deep Learning'
+This is a repo where I played with Variational AutoEncoders (VAE)
 
-https://learning.oreilly.com/library/view/generative-deep-learning/9781492041931/
+## Datasets: 
 
-https://www.amazon.com/Generative-Deep-Learning-Teaching-Machines/dp/1492041947/ref=sr_1_1
+- Large Scale CelebFaces Attributes [CelebA](http://mmlab.ie.cuhk.edu.hk/projects/CelebA.html)
+- [Google Quick! Draw! Dataset] (https://github.com/googlecreativelab/quickdraw-dataset)
 
-## Tensorflow
+## Examples :
 
-This branch uses standalone Keras with a Tensorflow 1.14 backend. See the `tensorflow_2` branch for the Keras within Tensorflow 2.0 version of the codebase.
+### Random faces generated using a VAE:
+![generated face](screen/vae_face_generated_100_0.png)
+![generated face](screen/vae_face_generated_100_1.png)
+![generated face](screen/vae_face_generated_100_2.png)
+![generated face](screen/vae_face_generated_100_3.png)
+![generated face](screen/vae_face_generated_100_4.png)
 
-## Structure
+### Adding attributes to an image 
 
-This repository is structured as follows:
+Smiling
+![vae](screen/vae_face_smiling.png)
 
-The notebooks for each chapter are in the root of the repository, prefixed with the chapter number.
+Bangs
+![vae](screen/vae_face_bangs.png)
 
-The `data` folder is where to download relevant data sources (chapter 3 onwards)
-The `run` folder stores output from the generative models (chapter 3 onwards)
-The `utils` folder stores useful functions that are sourced by the main notebooks
+Blond Hair
+![vae](screen/vae_face_Blond_Hair.png)
 
-## Book Contents
-Part 1: Introduction to Generative Deep Learning
-* Chapter 1: Generative Modeling
-* Chapter 2: Deep Learning
-* Chapter 3: Variational Autoencoders
-* Chapter 4: Generative Adversarial Networks
+Eyeglasses
+![vae](screen/vae_face_eyeglasses.png)
 
-Part 2: Teaching Machines to Paint, Write, Compose and Play
-* Chapter 5: Paint
-* Chapter 6: Write
-* Chapter 7: Compose
-* Chapter 8: Play
-* Chapter 9: The Future of Generative Modeling
-* Chapter 10: Conclusion
+Gray Hair
+![vae](screen/vae_face_Gray_Hair.png)
 
+## Reconstructing an encoded face
+![vae](screen/vae_face_reconstruct.png)
 
-## Getting started
+## Generating Skulls
 
-To get started, first install the required libraries inside a virtual environment:
+![skull](screen/skull_vae_100epochs.png)
 
-`pip install -r requirements.txt`
- 
+## Generating Firetrucks (for my twins)
 
-
-
+![firetrucks](screen/firetruck_vae_autoenc_100z_dim_generated_50epochs.png)
